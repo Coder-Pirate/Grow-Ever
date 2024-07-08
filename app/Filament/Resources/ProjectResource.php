@@ -28,7 +28,7 @@ class ProjectResource extends Resource
 {
     protected static ?string $model = Project::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-newspaper'; 
 
     public static function form(Form $form): Form
     {
@@ -39,7 +39,7 @@ class ProjectResource extends Resource
                 TextInput::make('author')->required()->placeholder('author'),
                 FileUpload::make('image')->required(),
                 RichEditor::make('content')->columnSpan(2),
-                Select::make('status')->options([
+                Select::make('status')->required()->options([
                     1 => 'Active',
                     0 => 'Inactive',
                 ]),

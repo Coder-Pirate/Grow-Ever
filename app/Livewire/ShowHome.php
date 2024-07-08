@@ -2,18 +2,18 @@
 
 namespace App\Livewire;
 
-use App\Models\Home;
 use Livewire\Component;
 use App\Models\Service;
+use App\Models\Home;
 
 class ShowHome extends Component
 {   
     // public $homeId = null;
 
     // public function mount($id){
-    //     $this->homeId = $id;
-
+    //     $this->homeId =$id;
     // }
+    
 
     public function render()
     {   

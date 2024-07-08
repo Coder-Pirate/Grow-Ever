@@ -63,7 +63,7 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav m-auto mb-2 mb-lg-0">
-					<li class="nav-item"> <a wire:navigate class="nav-link" href="{{ route('home') }}">Home</a></li>
+					<li class="nav-item"> <a wire:navigate class="nav-link" href="{{ route('home', 1) }}">Home</a></li>
 					<li class="nav-item "> <a wire:navigate class="nav-link" href="{{ route('page', 1) }}">About Us</a></li>
 					<li class="nav-item "> <a wire:navigate class="nav-link" href="{{ route('servicesPage') }}">Services</a></li>
 					<li class="nav-item "> <a wire:navigate class="nav-link" href="{{ route('teamPage') }}">Our Team</a></li>

@@ -23,7 +23,7 @@ class PageResource extends Resource
 {
     protected static ?string $model = Page::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-square-2-stack';
 
     public static function form(Form $form): Form
     {
@@ -32,7 +32,7 @@ class PageResource extends Resource
                 TextInput::make('title')->required()->placeholder('Title'),
                 RichEditor::make('content')->columnSpan(2),
                 FileUpload::make('image'),
-                Select::make('status')->options([
+                Select::make('status')->required()->options([
                     1 => 'Active',
                     0 => 'Inactive',
                 ]),
@@ -43,18 +43,19 @@ class PageResource extends Resource
     {
         return $table
             ->columns([
-                ImageColumn::make('image')->width(50),
+                // ImageColumn::make('image')->width(50),
                 TextColumn::make('title'),
             ])
             ->filters([
                 //
             ])
             ->actions([
+                
                 Tables\Actions\EditAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
+                    // Tables\Actions\DeleteBulkAction::make(),
                 ]),
             ]);
     }
@@ -70,7 +71,7 @@ class PageResource extends Resource
     {
         return [
             'index' => Pages\ListPages::route('/'),
-            'create' => Pages\CreatePage::route('/create'),
+            // 'create' => Pages\CreatePage::route('/create'),
             'edit' => Pages\EditPage::route('/{record}/edit'),
         ];
     }

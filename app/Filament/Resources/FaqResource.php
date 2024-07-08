@@ -21,7 +21,7 @@ class FaqResource extends Resource
 {
     protected static ?string $model = Faq::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-queue-list';
 
     public static function form(Form $form): Form
     {
@@ -29,7 +29,7 @@ class FaqResource extends Resource
             ->schema([
                 TextInput::make('question')->placeholder('Qustion')->required(),
                 RichEditor::make('answer')->columnSpan(2),
-                Select::make('status')->options([
+                Select::make('status')->required()->options([
                     1 => 'Active',
                     0 => 'Inactive',
                 ]),

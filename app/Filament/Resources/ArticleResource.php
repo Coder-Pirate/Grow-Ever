@@ -25,7 +25,8 @@ class ArticleResource extends Resource
 {
     protected static ?string $model = Article::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-clipboard-document-list';
+    protected static ?string $navigationLabel= 'Blog';
 
     public static function form(Form $form): Form
     {
@@ -36,7 +37,7 @@ class ArticleResource extends Resource
                 TextInput::make('author')->required()->placeholder('author'),
                 FileUpload::make('image')->required(),
                 RichEditor::make('content')->columnSpan(2),
-                Select::make('status')->options([
+                Select::make('status')->required()->options([
                     1 => 'Active',
                     0 => 'Inactive',
                 ]),

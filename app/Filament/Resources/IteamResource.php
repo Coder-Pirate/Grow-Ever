@@ -22,7 +22,8 @@ class IteamResource extends Resource
 {
     protected static ?string $model = Iteam::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-inbox-stack';
+    protected static ?string $navigationLabel= 'Project Category';
 
     public static function form(Form $form): Form
     {
@@ -31,7 +32,7 @@ class IteamResource extends Resource
                 TextInput::make('name')->required()->live()
                 ->afterStateUpdated(fn (Set $set, ?string $state) => $set('slug', Str::slug($state))),
                 TextInput::make('slug')->required(),
-                Select::make('status')->options([
+                Select::make('status')->required()->options([
                     1 => 'Active',
                     0 => 'Inactive',
                 ]),

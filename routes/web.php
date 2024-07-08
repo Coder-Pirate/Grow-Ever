@@ -26,7 +26,7 @@ Route::get('/blog', ShowBlog::class)-> name('blog');
 Route::get('/blog/{id}', BlogDetail::class)-> name('blogDetail');
 Route::get('/project', ShowProject::class)-> name('project');
 Route::get('/project/{id}', ProjectDetail::class)-> name('projectDetail');
-Route::get('/page/{id}', ShowPage::class)-> name('page');
+Route::get('/about/{id}', ShowPage::class)-> name('page');
 Route::get('/contact', ShowContactPage::class)-> name('contact');
 Route::get('/faq', ShowFaq::class)-> name('faq');
 
