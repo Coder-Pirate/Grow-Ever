@@ -14,7 +14,7 @@ class BlogDetail extends Component
 
     public function render()
     {
-        $article = Article::select('articles.*','categories.name as categorys_name')->leftJoin('categories','categories.id','articles.category_id')->findOrFail($this->blogID);
+        $article = Article::select('articles.*','categories.name as categorys_name')->leftJoin('categories','categories.id','articles.category_id')->where('status',1)->findOrFail($this->blogID);
         return view('livewire.blog-detail', ['article' => $article]);
     }
 }
