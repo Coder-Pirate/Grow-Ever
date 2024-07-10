@@ -95,25 +95,20 @@
                                     <div class="block mt-0">
                                         <h4 class="h5">Still Have Questions?</h4>
                                         <div class="content">Call Us We Will Be Happy To Help
-                                            <br> <a href="tel:+XXX111222">+XXX111222</a> 
-                                            <br>Monday - Friday
-                                            <br>9AM TO 8PM Eastern Time</div>
+                                            <br> <a href="+8801518-401677">+8801518-401677</a> 
+                                            <br>Saturday - Thursday
+                                            <br>10AM TO 10PM Dhaka Time</div>
                                     </div>
                                     <div class="block mt-4">
-                                        <h4 class="h5">Canada Office</h4>
-                                        <div class="content">Park Street.
-                                            <br>455.
-                                            <br>Salt lake</div>
+                                        <h4 class="h5">Dhaka Office</h4>
+                                        <div class="content">7674. Jannatbagh Bangladesh
+                                            <br> Kamrangirchor, Dhaka-1211
+                                            <br>Bangladesh .</div>
                                     </div>
-                                    <div class="block mt-4">
-                                        <h4 class="h5">Demo Office</h4>
-                                        <div class="content">22 Park Road.
-                                            <br>23BX,
-                                            <br>Demo</div>
-                                    </div>
+                                    
                                     <div class="block">
                                         <ul class="list-unstyled list-inline my-4 social-icons">
-                                            <li class="list-inline-item me-3"><a title="Explorer Facebook Profile" class="text-black" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                            <li class="list-inline-item me-3"><a title="Explorer Facebook Profile" class="text-black" href="https://www.facebook.com/growever.com.bd"><i class="fab fa-facebook-f"></i></a>
                                             </li>
                                             <li class="list-inline-item me-3"><a title="Explorer Twitter Profile" class="text-black" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
                                             </li>
